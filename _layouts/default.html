@@ -4,11 +4,9 @@
 {% include head.html %}
 
 <body>
-    <div class="container">
-        {% comment %}
-        {% include nav.html %}
-        {% endcomment %}
-        
+    {% include nav.html %}
+    
+    <div class="container">       
         {{ content }}
 
         {% include footer.html %}

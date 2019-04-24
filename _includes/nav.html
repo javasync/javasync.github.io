@@ -1,36 +1,35 @@
 <!-- Navigation -->
-<header class="masthead mb-5">
-    <div class="inner">
-        <h3 class="masthead-brand">
-            javAsync
-            <img src="{{ site.url }}/img/javasync-logo.jpg" alt="" width="72" height="72">
-        </h3>
-        <nav class="nav nav-masthead justify-content-center">
-                {% if page.url == "/" %}
-                    <a class="nav-link active"  href="{{ site.url }}">
-                {% else %}
-                    <a class="nav-link"  href="{{ site.url }}">
-                {% endif %}
-                    Home
-                </a>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="collapse navbar-collapse justify-content-md-left"></div>
+            <ul class="navbar-nav">
+                <li>
+                    <a href="https://github.com/javasync">
+                        GitHub
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<br>
+<br>
 
-                {% if page.url == "/news/"%}
-                    <a class="nav-link active"  href="{{ site.url }}/news">
-                {% else %}
-                    <a class="nav-link"  href="{{ site.url }}/news">
-                {% endif %}
-                    News
-                </a>
-
-            <a class="nav-link" href="#"></a>
-            <!-- Place this tag where you want the button to render. -->
-            <a class="github-button" 
-                href="https://github.com/javasync" 
-                data-size="large" 
-                data-show-count="true" 
-                aria-label="Star javasync on GitHub">
-                    Star
+    {% comment %}
+            {% if page.url == "/" %}
+                <a class="nav-link active"  href="{{ site.url }}">
+            {% else %}
+                <a class="nav-link"  href="{{ site.url }}">
+            {% endif %}
+                Home
             </a>
-        </nav>
-    </div>
+
+            {% if page.url == "/news/"%}
+                <a class="nav-link active"  href="{{ site.url }}/news">
+            {% else %}
+                <a class="nav-link"  href="{{ site.url }}/news">
+            {% endif %}
+                News
+            </a>
+    {% endcomment %}
+
 </header>
